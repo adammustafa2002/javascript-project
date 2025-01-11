@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Form Card Control</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="" class="form" name="myForm"  onsubmit="return validate()">
+                            <div class="form-group">
+                                <label for="" class="form-label">Card Title</label>
+                                <input type="text" name="title" id="newTitle" class="form-control" oninput="ChangeTitle()">
+                                <p class="text-danger alert1"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Card Body</label>
+                                <textarea name="text" id="newText" cols="30" rows="3" class="form-control" oninput="ChangeText()"></textarea>
+                                <p class="text-danger alert2"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Link Text</label>
+                                <input type="text" name="link" id="newLink" class="form-control" oninput="ChangeLink()">
+                                <p class="text-danger alert3"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Link href</label>
+                                <input type="text" name="href" id="newHref" class="form-control" oninput="ChangeHref()">
+                                <p class="text-danger alert4"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Body Font Size</label>
+                                <input type="range" name="" id="newSize" class="form-range" oninput="ChangeSize()">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Card title Color</label>
+                                <input type="color" name="" id="title-color" class="form-control form-control-color" oninput="TitleColor()">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Card Body Color</label>
+                                <input type="color" name="" id="text-color" class="form-control form-control-color" oninput="TextColor()">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Card Background Color</label>
+                                <input type="color" name="" id="cardBG" class="form-control form-control-color" oninput="CardColor()">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Body Background Color</label>
+                                <input type="color" name="" id="bodyBG" class="form-control form-control-color" oninput="BodyColor()">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="submit" value="Submit" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="card card-bg" id="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur rerum aut
+                            quasi commodi minus consequuntur quaerat porro perferendis ullam optio. Magnam dolore nobis
+                            consequatur ad debitis facere aliquid et laborum!
+                        </p>
+                        <a href="#" class="card-link">Card Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
